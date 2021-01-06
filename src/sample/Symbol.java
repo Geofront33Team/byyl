@@ -41,13 +41,15 @@ public class Symbol {
 
 	// 符号码的个数
 	public static final int symnum = 35;
+	public static final int autonum =36;//auto
+
 
 	// 设置保留字名字，按照字母顺序，便于折半查找
 	public static final String[] word = new String[] { "begin", "call", "const", "do", "else", "end", "if", "odd",
-			"procedure", "read", "repeat", "then", "until", "var", "while", "write" };
+			"procedure", "read", "repeat", "then", "until", "var", "while", "write","auto" };
 	// 保留字对应的符号值
 	public static final int[] wsym = new int[] { beginsym, callsym, constsym, dosym, elsesym, endsym, ifsym, oddsym,
-			procsym, readsym, repeatsym, thensym, untilsym, varsym, whilesym, writesym };
+			procsym, readsym, repeatsym, thensym, untilsym, varsym, whilesym, writesym ,autonum};
 
 	// 符号码
 	public int symtype;
