@@ -26,8 +26,9 @@ public class PL0 {
     public PL0(String filepath) {
         Scanner scan = new Scanner(filepath);
         praser = new Parser(scan,//词法分析器
-                new SymbolTable(),//名字表
-                new Interpreter());
+                new SymbolTable()//名字表
+//                ,new Interpreter()
+        );
     }
 
     public boolean compile() {
