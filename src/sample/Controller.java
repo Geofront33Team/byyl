@@ -49,6 +49,8 @@ public class Controller {
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Text Files", "*.txt"));
         File selectedFile = fileChooser.showOpenDialog(stage);
         System.out.println(selectedFile);
+        if (selectedFile == null)
+            return;
         fileNameArea.setText(selectedFile.toString());
         FileInputStream fileInputStream = new FileInputStream(selectedFile);
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
