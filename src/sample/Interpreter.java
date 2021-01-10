@@ -50,7 +50,7 @@ public class Interpreter {
                 try {
                     String msg = i + "  " + Pcode.pcode[pcodeArray[i].f] + "  " + pcodeArray[i].l + " " + pcodeArray[i].a;                //形如: lit l,a
                     System.out.println(msg);
-                    PL0.pcodeWriter.write(i + "  " + msg + '\n');
+//                    PL0.pcodeWriter.write(i + "  " + msg + '\n');
                 } catch (Exception e) {
                     e.printStackTrace();
                     System.out.println("***list pcode meet with error***");

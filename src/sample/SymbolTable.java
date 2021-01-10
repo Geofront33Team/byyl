@@ -103,7 +103,7 @@ public class SymbolTable {
 					break;
 				}
 				System.out.println(msg);
-				PL0.tableWriter.write(msg + '\n');
+//				PL0.tableWriter.write(msg + '\n');
 			} catch (Exception ex) {
 				ex.printStackTrace();
 				System.out.println("***write table intfo meet with error***");
