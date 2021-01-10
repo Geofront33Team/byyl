@@ -11,7 +11,7 @@ import java.io.FileWriter;
 public class PL0 {
 
     
-    public static final String pcodeFile = "d:\\pcode.txt";
+    public static final String pcodeFile = "pcode.txt";
     public static final String tableFile = "d:\\table.txt";
     public static final String runtimeFile = "d:\\runtime.txt";
     public static final String errFile = "d:\\error.txt";

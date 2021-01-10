@@ -39,7 +39,20 @@ public class Controller {
         OutputStreamWriter dos1=new OutputStreamWriter(fos1);
         dos1.write(inputArea.getText());
         dos1.close();
-        outputArea.setText(inputArea.getText());
+
+        PL0 compiler = new PL0("input.txt");
+        boolean compileRet = compiler.compile();
+
+        FileInputStream fileInputStream = new FileInputStream("pcode.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        StringBuffer sb = new StringBuffer();
+        String text;
+        while((text = bufferedReader.readLine()) != null){
+            sb.append(text);
+            sb.append('\n');
+        }
+        outputArea.setText(sb.toString());
     }
     @FXML protected void handleUploadFileButtonAction(ActionEvent event) throws IOException {
         System.out.println("浏览文件");
