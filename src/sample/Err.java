@@ -48,7 +48,7 @@ public class Err {
     public  void report(int errcode,int line) {
         try {
             System.out.println("*** line( "+line+"):" + errInfo[errcode] + "  ***");
-//            PL0.errWriter.write("*** line ( "+line+"):"+ errInfo[errcode] + "  ***\n");
+            PL0.errWriter.write("*** line ( "+line+"):"+ errInfo[errcode] + "  ***\n");
             errCount++;
         }catch(Exception e){
             e.printStackTrace();
