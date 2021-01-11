@@ -43,12 +43,24 @@ public class Controller {
         PL0 compiler = new PL0("input.txt");
         boolean compileRet = compiler.compile();
 
-        FileInputStream fileInputStream = new FileInputStream("pcode.txt");
-        InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
         StringBuffer sb = new StringBuffer();
         String text;
-        while((text = bufferedReader.readLine()) != null){
+
+        FileInputStream fileInputStream1 = new FileInputStream("error.txt");
+        InputStreamReader inputStreamReader1 = new InputStreamReader(fileInputStream1);
+        BufferedReader bufferedReader1 = new BufferedReader(inputStreamReader1);
+        while((text = bufferedReader1.readLine()) != null){
+            sb.append(text);
+            sb.append('\n');
+        }
+
+
+        FileInputStream fileInputStream2 = new FileInputStream("pcode.txt");
+        InputStreamReader inputStreamReader2 = new InputStreamReader(fileInputStream2);
+        BufferedReader bufferedReader2 = new BufferedReader(inputStreamReader2);
+
+        while((text = bufferedReader2.readLine()) != null){
             sb.append(text);
             sb.append('\n');
         }
