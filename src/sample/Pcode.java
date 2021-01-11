@@ -1,11 +1,6 @@
 package sample;
 
-/**
- * //虚拟机指令
- *
- * @author jiangnan
- *
- */
+
 public class Pcode {
 
     public Pcode(int f, int l, int a) {

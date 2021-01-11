@@ -3,12 +3,6 @@ package sample;
 import java.io.IOException;
 import java.util.BitSet;
 
-/**
- * 语法分析器。 这是PL/0分析器中最重要的部分， 在语法分析的过程中嵌入了语法错误检查和目标代码生成。
- *
- * @author jiangnan
- *
- */
 public class Parser {
 
 	/**

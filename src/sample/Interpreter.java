@@ -7,12 +7,7 @@ import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * 类P-code代码解释器(含代码生成函数)
- *
- * @author jiangnan
- *
- */
+
 public class Interpreter {
 
     //运行栈上限

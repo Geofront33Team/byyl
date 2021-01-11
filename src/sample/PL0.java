@@ -3,11 +3,7 @@ package sample;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-/**
- * 组织输入输出接口
- *
- * @author jiangnan
- */
+
 public class PL0 {
 
     
